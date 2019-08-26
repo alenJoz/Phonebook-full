@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+}
+
+body {
+  line-height: 1.6;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+.is-active {
+  font-weight: bold;
+}
+
+.half-height {
+  height: 50vh;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+/*
+Overrides
+*/
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.07);
+}
+
+.uk-navbar-nav > li > a {
+  text-transform: none;
+  color: #424242;
+  font-size: 18px;
+}
+
+[class*='uk-navbar-dropdown-bottom'] {
+  margin-top: 0px;
+}
+
+.uk-nav > li > a {
+  padding: 0 0;
+}
+
+.uk-logo {
+  font-size: 32px;
+  font-family: 'Pacifico';
+  color: #424242;
+  text-decoration: none;
+}
+
+.tm-sidebar-left {
+  position: fixed;
+  top: 80px;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 240px !important;
+  padding: 0px 40px 60px 40px;
+  border-right: 1px #e5e5e5 solid;
+  overflow: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.tm-sidebar-right {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .tm-sidebar-right {
+    left: calc(100% + 0px);
+  }
+
+  .tm-sidebar-left + .tm-main {
+    padding-left: 300px;
+  }
+
+  .tm-sidebar-left {
+    width: 320px !important;
+    padding: 0px 50px 60px 45px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tm-sidebar-left + .tm-main {
+    padding-left: 30px;
+  }
+}
+
+.uk-search-medium {
+  width: 100%;
+}
+
+.uk-search-default .uk-search-input {
+  height: 50px;
+}
+
+.position-right {
+  right: 36px;
+}
+
+.uk-position-bottom-right {
+  bottom: 50px;
+  right: 50px;
+}
+
+.a-list {
+  position: fixed;
+  left: 300px;
+  bottom: 0;
+  top: 255px;
+}
+
+.a-list > a {
+  display: block;
+  color: #333;
+  padding: 3px 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.fixed-serch {
+  position: fixed;
+  background-color: white;
+  min-height: 150px;
+  z-index: 100;
+  width: 235px !important;
+  padding: 30px 0;
+}
+
+.tm-nav {
+  position: absolute;
+  top: 180px;
+  width: 73%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.uk-input:focus,
+.uk-select:focus,
+.uk-textarea:focus {
+  outline: 0;
+  background-color: #fff;
+  color: #666;
+  border-color: #424242;
+}
